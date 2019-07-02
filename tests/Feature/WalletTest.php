@@ -5,11 +5,11 @@ namespace Tests\Feature;
 use App\Transfer;
 use App\Wallet;
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class WalletTest extends TestCase
 {
+    use RefreshDatabase;
     /**
      *
      * @return void
