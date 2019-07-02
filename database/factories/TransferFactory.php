@@ -2,12 +2,12 @@
 
 /* @var $factory \Illuminate\Database\Eloquent\Factory */
 
-use App\transfer;
+use App\Transfer;
 use Faker\Generator as Faker;
 
-$factory->define(transfer::class, function (Faker $faker) {
+$factory->define(Transfer::class, function (Faker $faker) {
     return [
-        'descritcion' => $faker->text(200),
+        'description' => $faker->text(200),
         'amount'      => $faker->numberBetween(10, 90),
         'wallet_id'   => $faker->randomDigitNotNull,
     ];
