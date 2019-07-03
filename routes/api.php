@@ -18,3 +18,4 @@ use Illuminate\Http\Request;
 //});
 
 Route::get('/wallet','WalletController@index');
+Route::post('/transfer','TransferController@store');
